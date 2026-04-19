@@ -12,7 +12,7 @@ export class PaymentCreatedListener extends Listener<PaymentCreatedEvent> {
        const order = await Order.findById(data.orderId);
 
          if (!order) throw new Error("Order not found");
-
+         console.log("Order found: ", order)
          order.set({ status: OrderStatus.Complete });
          await order.save();
 
