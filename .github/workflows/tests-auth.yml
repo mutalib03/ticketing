@@ -2,6 +2,8 @@ name: tests-auth
 
 on:
   pull_request
+    paths:
+      - 'Auth/**'
 jobs:
   build:
      runs-on: ubuntu-latest

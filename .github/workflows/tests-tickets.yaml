@@ -1,7 +1,9 @@
-name: tests-auth
+name: tests-tickets
 
 on:
   pull_request
+    paths:
+      - 'Tickets/**'
 jobs:
   build:
      runs-on: ubuntu-latest
