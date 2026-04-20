@@ -9,7 +9,7 @@ import { PaymentCreatedListener } from './events/listeners/payment-created-liste
 
 
 const start = async () => {
- console.log("Starting up orders service...")
+ console.log("Starting up orders service.......")
   if (!process.env.JWT_KEY) throw new Error('JWT_KEY must be defined');
   if (!process.env.MONGO_URI) throw new Error("MONGO_URL must be defined")
   if (!process.env.NATS_CLUSTER_ID) throw new Error("NATS_CLUSTER_ID must be defined")
